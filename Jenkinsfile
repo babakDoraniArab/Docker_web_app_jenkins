@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t bablido/nodeWebApp:latest .'
+				sh 'docker build -t bablido/nodewebapp:latest .'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push bablido/nodeWebApp:latest'
+				sh 'docker push bablido/nodewebapp:latest'
 			}
 		}
 	}
